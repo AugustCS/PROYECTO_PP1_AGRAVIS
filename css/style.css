@@ -1,0 +1,141 @@
+*{
+	box-sizing: border-box;
+}
+a,span,img{
+	display: inline-block;
+	vertical-align: top;
+	text-decoration:none;
+}
+a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[type='submit']{
+	font-family: 'Niramit', sans-serif;
+}
+.btn{
+	border:none;
+	padding: 8px 18px;
+	font-size: 15px;
+	border-radius: 25px;
+}
+.btn-primary{
+	background: #3D83C0;
+	color:white;
+}
+.btn-success{
+	background:#54AE54;
+	color:white;
+}
+.btn-fail{
+	background:#CD403C;
+	color:white;
+}
+.clear{
+	clear: both;
+}
+.bar-sup{
+	width:100%;
+	height:10vh;
+}
+.bar-lat img{
+	width:100%;
+	height:80px;
+}
+.bar-sup h1{
+	display: inline-flex;
+	/*alineacion vertical*/
+	align-items: center;
+	/*alineacion hori*/
+	/*justify-content: center*/
+	height: 100%;
+	font-size: 17px;
+	padding: 10px;
+}
+.bar-lat{
+	width:15%;
+	height:100vh;
+	float:left;
+	overflow: auto;
+	background: #ED303B;
+}
+
+.bar-lat h2{
+	padding: 10px;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+.bar-content{
+	width:85%;
+	height:100vh;
+	background:#2A2C2F;
+	float:right;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu-lat{
+	background: #F5B003;
+	display: none;
+}
+.bar-lat h3{
+	font-size: 17px;
+	padding: 15px;
+	margin-bottom: 5px;
+	border-right: 3px solid #F5B003;
+	border-left: 3px solid #F5B003;
+	cursor: pointer;
+}
+.bar-lat h2,h3{
+	color:white;
+}
+.menu-lat a{
+	width:100%;
+	font-size: 18px;
+	color:black;
+	padding:15px 0;
+	padding-left: 15px;
+}
+.bar-content h1{
+	font-size: 35px;
+	display: inline-block;
+	vertical-align: top;
+	color:white;
+}
+/* ESTILOS LOGIN*/
+.body-login{
+	width:100%;
+	height:100vh;
+	background:#323A4F;
+	position:relative;
+}
+.box-login{
+	position:absolute;
+	width:400px;
+	height: 300px;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	border:2px solid black;
+	border-radius: 10px;
+	background: white;
+	text-align: center;
+	padding-top: 50px;
+}
+.box-login h1{
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+.box-form fieldset{
+	width: 100%;
+	padding: 5px;
+}
+.box-form fieldset input[type='text'],input[type='password']{
+	width: 80%;
+	padding: 9px;
+	font-size: 15px;
+	border-radius: 10px;
+	border: none;
+	border:2px solid gray;
+}
+.box-form fieldset input[type='text']:hover,input[type='password']:hover{
+	border:2px solid #3D83C0;
+	background:  #15A9EE;
+	color:white;
+}
