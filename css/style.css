@@ -30,23 +30,9 @@ a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[ty
 .clear{
 	clear: both;
 }
-.bar-sup{
-	width:100%;
-	height:10vh;
-}
 .bar-lat img{
 	width:100%;
 	height:80px;
-}
-.bar-sup h1{
-	display: inline-flex;
-	/*alineacion vertical*/
-	align-items: center;
-	/*alineacion hori*/
-	/*justify-content: center*/
-	height: 100%;
-	font-size: 17px;
-	padding: 10px;
 }
 .bar-lat{
 	width:15%;
@@ -55,27 +41,17 @@ a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[ty
 	overflow: auto;
 	background: #ED303B;
 }
-
 .bar-lat h2{
 	padding: 10px;
 	font-size: 20px;
 	margin-bottom: 5px;
-}
-.bar-content{
-	width:85%;
-	height:100vh;
-	background:#2A2C2F;
-	float:right;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 .menu-lat{
 	background: #F5B003;
 	display: none;
 }
 .bar-lat h3{
-	font-size: 17px;
+	font-size: 15px;
 	padding: 15px;
 	margin-bottom: 5px;
 	border-right: 3px solid #F5B003;
@@ -92,13 +68,43 @@ a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[ty
 	padding:15px 0;
 	padding-left: 15px;
 }
-.bar-content h1{
-	font-size: 35px;
-	display: inline-block;
-	vertical-align: top;
+.bar-content{
+	width: 85%;
+	height: 100vh;
+	float:right;
+}
+.box-data-user{
+	width:100%;
+	height: 10vh;
+	background: white;
+	border-bottom: 2px solid #F5B003;
+}
+.box-user{
+	float:right;
+	margin-right: 10px;
+	margin-top: 10px;
+	padding: 12px;
+	border-radius: 20px;
+	border:1px solid black;
+	background:#4C4C4A;
 	color:white;
 }
-/* ESTILOS LOGIN*/
+.box-hide-user{
+	width:100%;
+	height: auto;
+	padding: 10px;
+	text-align: center;
+
+	display: none;
+}
+.box-contenido{
+	width:100%;
+	height: 90vh;
+	background: white;
+}
+
+
+/************************* ESTILOS LOGIN *********************/
 .body-login{
 	width:100%;
 	height:100vh;

@@ -15,7 +15,9 @@ $(document).ready(function(){
 	menulateral(".t-3",".lat-3");
 	menulateral(".t-4",".lat-4");
 
-
+	$("#linkusuario").click(function(){
+		$(".box-hide-user").toggle("fast");
+	})
 
 
 
