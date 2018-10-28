@@ -1,3 +1,9 @@
+<?php 
+	session_start();
+	if(isset($_SESSION['usuario'])){
+		header('Location: principal.php');
+	}
+ ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,15 +18,18 @@
 	<div class="body-login">
 		<div class="box-login">
 			<h1>Login</h1>
-			<form class="box-form">
+
+			<h2 class="icon-login"><i class="far fa-user"></i></h2>
+
+			<form class="box-form" action="validacion.php" method="post">
 				<fieldset>
-					<input type="text" placeholder="Usuario" name="username"></input>
+					<input type="text" placeholder="Usuario" name="username" required></input>
 				</fieldset>
 				<fieldset>
-					<input type="password" placeholder="Contraseña" name="password"></input>
+					<input type="password" placeholder="Contraseña" name="password" required></input>
 				</fieldset>
 				<fieldset>
-				 	<input type="submit" value="INGRESAR" class="btn btn-primary">
+				 	<input style="width:80%;" type="submit" value="INGRESAR" class="btn btn-primary">
 				 </fieldset>
 		</div>
 	</div>

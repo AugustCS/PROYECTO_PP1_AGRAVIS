@@ -114,7 +114,7 @@ a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[ty
 .box-login{
 	position:absolute;
 	width:400px;
-	height: 300px;
+	height: auto;
 	left:50%;
 	top:50%;
 	transform:translate(-50%,-50%);
@@ -122,11 +122,15 @@ a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[ty
 	border-radius: 10px;
 	background: white;
 	text-align: center;
-	padding-top: 50px;
+	padding: 20px 0;
 }
 .box-login h1{
 	font-size: 25px;
 	margin-bottom: 10px;
+}
+.icon-login{
+	text-align: center;
+	font-size: 90px;
 }
 .box-form fieldset{
 	width: 100%;
