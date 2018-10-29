@@ -31,6 +31,7 @@
 				<fieldset>
 				 	<input style="width:80%;" type="submit" value="INGRESAR" class="btn btn-primary">
 				 </fieldset>
+			</form>
 		</div>
 	</div>
 	
