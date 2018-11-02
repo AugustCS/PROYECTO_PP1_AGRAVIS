@@ -1,10 +1,3 @@
-<?php 
-/*	session_start();
-	if(!isset($_SESSION['usuario'])){
-		header('Location: index.php');
-	}*/
- ?>
-	
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -28,10 +21,11 @@
 
 		<h3 class="t-1"><i class="fas fa-file-signature"></i> Registros </h3>
 		<div class="menu-lat lat-1">
-			<a href="">Sub Opcion 1</a>
-			<a href="">Sub Opcion 1</a>
-			<a href="">Sub Opcion 1</a>
-			<a href="">Sub Opcion 1</a>
+			<a id="reg-usuarios">Registro Usuarios</a>
+			<a id="reg-empleados">Registro Empleados</a>
+			<a id="reg-linea-genetica">Registro Linea Genética</a>
+			<a id="reg-tipo-ave">Registro Tipo Ave</a>
+			<a id="reg-elemento">Registro Elemento</a>
 		</div>
 
 		<h3 class="t-2"><i class="fas fa-chart-pie"></i> Consultas </h3>
@@ -49,13 +43,13 @@
 			<a href="">Sub Opcion 3</a>
 			<a href="">Sub Opcion 3</a>
 		</div>
-		<h3 class="t-4"><i class="fas fa-book"></i> Reportes </h3>
+		<!-- <h3 class="t-4"><i class="fas fa-book"></i> Reportes </h3>
 		<div class="menu-lat lat-4">
 			<a href="">Sub Opcion 3</a>
 			<a href="">Sub Opcion 3</a>
 			<a href="">Sub Opcion 3</a>
 			<a href="">Sub Opcion 3</a>
-		</div>
+		</div> -->
 	</div>
 	<div class="bar-content">
 		<div class="box-data-user">

@@ -19,7 +19,21 @@ $(document).ready(function(){
 		$(".box-hide-user").toggle("fast");
 	})
 
+	$("a").click(function(e){
+		e.preventDefault();
+	})
 
+	function lanzarContenido(link,contenido,archivo){
+		$(link).click(function(){
+			$(".menu-lat a").removeClass("active");
+			$(link).addClass("active");
+			$(contenido).load(archivo);
+		})
+	}
 
-
+	lanzarContenido("#reg-usuarios",".box-contenido","reg_usuarios.php");
+	lanzarContenido("#reg-empleados",".box-contenido","reg_empleados.php");
+	lanzarContenido("#reg-linea-genetica",".box-contenido","reg_linea_genetica.php");
+	lanzarContenido("#reg-tipo-ave",".box-contenido","reg_tipo_ave.php");
+	lanzarContenido("#reg-elemento",".box-contenido","reg_elemento.php");
 })

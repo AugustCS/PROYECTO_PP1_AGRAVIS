@@ -9,6 +9,9 @@ a,span,img{
 a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[type='submit']{
 	font-family: 'Niramit', sans-serif;
 }
+a{
+	cursor:pointer;
+}
 .btn{
 	border:none;
 	padding: 8px 18px;
@@ -63,10 +66,18 @@ a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[ty
 }
 .menu-lat a{
 	width:100%;
-	font-size: 18px;
+	font-size: 16px;
 	color:black;
 	padding:15px 0;
 	padding-left: 15px;
+}
+.menu-lat a:hover{
+	background: white;
+	color:black;
+}
+.active{
+	background: white;
+	color:#F5B003;
 }
 .bar-content{
 	width: 85%;
