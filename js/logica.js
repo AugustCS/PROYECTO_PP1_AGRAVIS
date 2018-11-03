@@ -36,4 +36,5 @@ $(document).ready(function(){
 	lanzarContenido("#reg-linea-genetica",".box-contenido","reg_linea_genetica.php");
 	lanzarContenido("#reg-tipo-ave",".box-contenido","reg_tipo_ave.php");
 	lanzarContenido("#reg-elemento",".box-contenido","reg_elemento.php");
+
 })
