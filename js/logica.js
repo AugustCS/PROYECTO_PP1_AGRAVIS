@@ -19,7 +19,7 @@ $(document).ready(function(){
 		$(".box-hide-user").toggle("fast");
 	})
 
-	$("a").click(function(e){
+	$(".menu-lat a").click(function(e){
 		e.preventDefault();
 	})
 

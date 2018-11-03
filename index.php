@@ -15,7 +15,7 @@
 
 			<h2 class="icon-login"><i class="far fa-user"></i></h2>
 
-			<form class="box-form" action="validacion.php" method="post">
+			<form class="box-form" action="validacion_login.php" method="post">
 				<fieldset>
 					<input type="text" placeholder="Usuario" name="username" required></input>
 				</fieldset>

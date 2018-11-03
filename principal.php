@@ -1,3 +1,9 @@
+<?php 
+	session_start();
+	if(!isset($_SESSION["usuario"])){
+		header("location:index.php");
+	}
+ ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -54,9 +60,9 @@
 	<div class="bar-content">
 		<div class="box-data-user">
 			<div class="box-user">
-				<span id="linkusuario">Bienvenido ADMIN <i class="far fa-user-circle"></i> <i class="fas fa-angle-down"></i></span>
+				<span id="linkusuario">Bienvenido <?php print $_SESSION["usuario"];?> <i class="far fa-user-circle"></i> <i class="fas fa-angle-down"></i></span>
 				<div class="box-hide-user">
-					<span href="">Cerrar Sesion <i class="fas fa-times-circle"></i></span>
+					<a href="cerrar_sesion.php">Cerrar Sesion <i class="fas fa-times-circle"></i></a>
 				</div>
 			</div>
 			<div class="clear"></div>
