@@ -1,10 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title></title>
-</head>
+<html lang="es">
 <body>
-	<h1>Registro Usuarios</h1>
+	<div style="width:100%;height: 100%;padding: 50px;background: skyblue;">
+		<h1>REGISTRO DE USUARIOS</h1>
+		<form action="">
+			<fieldset>
+				<input type="text" placeholder="Ingrese el nombre del empleado" name="nom_empleado">
+			</fieldset><br>
+			<fieldset>
+				<input type="email" placeholder="Ingrese el correo del empleado" name="mail_empleado">
+			</fieldset><br>
+			<fieldset>
+				<input type="text" placeholder="Ingrese el DNI del empleado" name="dni_empleado">
+			</fieldset><br>
+			<fieldset>
+				<input type="text" placeholder="Ingrese el cargo del empleado" name="cargo_empleado">
+			</fieldset><br>
+			<fieldset>
+				<input type="text" placeholder="Ingrese el usuario del empleado" name="user_empleado">
+			</fieldset><br>
+			<fieldset>
+				<input type="password" placeholder="Ingrese el password del empleado" name="pass_empleado">
+			</fieldset><br>
+			<fieldset>
+				<input type="text" placeholder="Ingrese el estado del empleado" name="estado_empleado">
+			</fieldset><br>
+			<fieldset>
+				<input type="text" placeholder="Ingrese el nivel del empleado" name="nivel_empleado">
+			</fieldset>
+		</form>
+	</div>
+	
 </body>
 </html>
