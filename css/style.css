@@ -6,8 +6,23 @@ a,span,img{
 	vertical-align: top;
 	text-decoration:none;
 }
-a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[type='submit']{
+a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[type='submit'],label,input[type='reset'],textarea,input[type='email']{
 	font-family: 'Niramit', sans-serif;
+}
+.box-cargados{
+	width:100%;
+	height: 100%;
+	padding: 20px;
+}
+.box-cargados-left{
+	width:50%;
+	height: 100%;
+	float:left;
+}
+.box-cargados-right{
+	width:50%;
+	height: 100%;
+	float:left;
 }
 a{
 	cursor:pointer;
@@ -148,7 +163,7 @@ a{
 	width: 100%;
 	padding: 5px;
 }
-input[type='text'],input[type='password'],input[type='email']{
+.box-form input[type='text'],.box-form input[type='password'],.box-form input[type='email']{
 	width: 80%;
 	padding: 9px;
 	font-size: 15px;
@@ -156,7 +171,7 @@ input[type='text'],input[type='password'],input[type='email']{
 	border: none;
 	border:2px solid gray;
 }
-input[type='text']:hover,input[type='password']:hover,input[type='email']:hover{
+.box-form input[type='text']:hover,.box-form input[type='password']:hover,.box-form input[type='email']:hover{
 	border:2px solid #3D83C0;
 	background:  #15A9EE;
 	color:white;

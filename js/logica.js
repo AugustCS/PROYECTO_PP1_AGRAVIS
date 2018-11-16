@@ -27,7 +27,7 @@ $(document).ready(function(){
 		$(link).click(function(){
 			$(".menu-lat a").removeClass("active");
 			$(link).addClass("active");
-			$(contenido).load(archivo);
+			$(contenido).load("ventanas/"+archivo);
 		})
 	}
 

@@ -27,11 +27,11 @@
 
 		<h3 class="t-1"><i class="fas fa-file-signature"></i> Registros </h3>
 		<div class="menu-lat lat-1">
-			<a id="reg-usuarios">Registro Usuarios</a>
-			<a id="reg-empleados">Registro Empleados</a>
-			<a id="reg-linea-genetica">Registro Linea Genética</a>
-			<a id="reg-tipo-ave">Registro Tipo Ave</a>
-			<a id="reg-elemento">Registro Elemento</a>
+			<a id="reg-usuarios">Registrar Empleados</a>
+			<a id="reg-linea-genetica">Registrar Linea Genética</a>
+			<a id="reg-tipo-ave">Registrar Tipo Ave</a>
+			<a id="reg-elemento">Registrar Elemento</a>
+			<a id="reg-cliente">Registrar Cliente</a>
 		</div>
 
 		<h3 class="t-2"><i class="fas fa-chart-pie"></i> Consultas </h3>
