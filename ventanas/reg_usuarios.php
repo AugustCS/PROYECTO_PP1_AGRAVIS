@@ -6,7 +6,7 @@
 			<form action="">
 				<fieldset>
 					<label>Nombre *</label><br>
-					<input type="text" placeholder="Escribe aqui" name="nom_empleado">
+					<input type="text" placeholder="Escribe aqui" name="nom_empleado" required>
 				</fieldset><br>
 				<fieldset>
 					<label>Email *</label><br>

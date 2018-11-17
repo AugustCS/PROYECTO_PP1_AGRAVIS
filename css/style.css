@@ -18,11 +18,13 @@ a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[ty
 	width:50%;
 	height: 100%;
 	float:left;
+	background: skyblue;
 }
 .box-cargados-right{
 	width:50%;
 	height: 100%;
-	float:left;
+	float:right;
+	background: yellow;
 }
 a{
 	cursor:pointer;
