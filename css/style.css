@@ -1,3 +1,4 @@
+/*GENERALES*/
 *{
 	box-sizing: border-box;
 }
@@ -6,7 +7,7 @@ a,span,img{
 	vertical-align: top;
 	text-decoration:none;
 }
-a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[type='submit'],label,input[type='reset'],textarea,input[type='email']{
+a,span,h1,h2,h3,h4,h5,h6,p,li,input,label,textarea{
 	font-family: 'Niramit', sans-serif;
 }
 .box-cargados{
@@ -15,17 +16,30 @@ a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[ty
 	padding: 20px;
 }
 .box-cargados-left{
-	width:50%;
+	width:35%;
 	height: 100%;
 	float:left;
-	background: skyblue;
+	overflow: auto;
+}
+.box-cargados-left h1{
+	font-size: 22px;
+	margin-bottom: 15px;
 }
 .box-cargados-right{
-	width:50%;
+	width:65%;
 	height: 100%;
 	float:right;
-	background: yellow;
+	background: gray;
 }
+.cajas-texto{
+	width:90%;
+	padding: 3px;
+	border:none;
+	border:1px solid gray;
+	border-radius: 3px;
+	margin-top: 5px;
+}
+/*ESTILOS PRINCIPAL*/
 a{
 	cursor:pointer;
 }
@@ -110,19 +124,18 @@ a{
 .box-user{
 	float:right;
 	margin-right: 10px;
-	margin-top: 10px;
-	padding: 12px;
+	margin-top: 5px;
+	padding: 10px 15px;
 	border-radius: 20px;
 	border:1px solid black;
 	background:#4C4C4A;
-	color:white;
+	color:white;	
 }
 .box-hide-user{
 	width:100%;
 	height: auto;
 	padding: 10px;
 	text-align: center;
-
 	display: none;
 }
 .box-contenido{
@@ -130,8 +143,6 @@ a{
 	height: 90vh;
 	background: white;
 }
-
-
 /************************* ESTILOS LOGIN *********************/
 .body-login{
 	width:100%;

@@ -2,18 +2,18 @@
 <body>
 	<div class="box-cargados">
 		<div class="box-cargados-left">
-			<h2>Linea Genética</h2>
+			<h1>Linea Genética</h1>
 			<form action="">
 				<fieldset>
-					<label>Nombre *</label><br>
-					<input type="text" placeholder="Escriba aqui">
+					<label>Nombre</label><br>
+					<input class="cajas-texto" type="text" placeholder="Escriba aqui">
 				</fieldset><br>
 				<fieldset>
-					<label>Descripcion *</label><br>
-					<textarea placeholder="Escriba aqui" ></textarea>
+					<label>Descripcion</label><br>
+					<textarea class="cajas-texto" placeholder="Escriba aqui" ></textarea>
 				</fieldset><br>
-				<input type="submit" value="Grabar">
 				<input type="reset" value="Limpiar">
+				<input type="submit" value="Grabar">
 			</form>
 		</div>
 		<div class="box-cargados-right">
