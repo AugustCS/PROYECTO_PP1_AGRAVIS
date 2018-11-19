@@ -1,28 +1,34 @@
 <?php 
 			require "../conexion.php";
 			
-			$nombre_emp = $_POST["nom_empleado"];
-			$mail_emp = $_POST["mail_empleado"];
-			$dni_emp = $_POST["dni_empleado"];
-			$cargo_emp = $_POST["cargo_empleado"];
-			$user_emp = $_POST["user_empleado"];
-			$pass_emp = $_POST["pass_empleado"];
-			$estado_emp = $_POST["estado_empleado"];
-			$nivel_emp = $_POST["nivel_empleado"];
+			$tipo_ave = $_POST["tipo_ave"];
+			$nom_elemento = $_POST["nom_elemento"];
+			$color_elemento = $_POST["color_elemento"];
+			$peso_elemento = $_POST["peso_elemento"];
+			$linea_genetica = $_POST["linea_genetica"];
+			$cant_vacunas = $_POST["cant_vacunas"];
+			$costo_unidad = $_POST["costo_unidad"];
+			$costo_caja = $_POST["costo_caja"];
+			$nombre_imagen = $_FILES["img_elemento"]["name"];
 
-			$inser_empleado = $conexion ->prepare("INSERT INTO bd_agravis.TBL_EMPLEADO(NOM_EMPLEADO,EMAIL_EMPLEADO,DNI_EMPLEADO,CARGO_EMPLEADO,USERNAME,PASS,ESTADO,NIVEL) VALUES(:NOMBRE,:EMAIL,:DNI,:CARGO,:USER,:PASS,:ESTADO,:NIVEL);");
+			$inser_elemento = $conexion ->prepare("INSERT INTO bd_agravis.TBL_ELEMENTO(ID_TIPO_AVE,NOM_ELEMENTO,COLOR_ELEMENTO,PESO_ELEMENTO,ID_LINEA_GENETICA,CANT_VACUNAS,COSTO_UND,COSTO_CAJA,IMAGEN_AVE) VALUES(:TIPOAVE,:NOM_ELEMENTO,:COLOR_ELEMENTO,:PESO_ELEMENTO,:LINEA_GENETICA,:CANT_VACUNAS,:COSTO_UND,:COSTO_CAJA,:NOMBRE_IMAGEN);");
 
-			$inser_empleado->bindParam(":NOMBRE",$nombre_emp);
-			$inser_empleado->bindParam(":EMAIL",$mail_emp);
-			$inser_empleado->bindParam(":DNI",$dni_emp);
-			$inser_empleado->bindParam(":CARGO",$cargo_emp);
-			$inser_empleado->bindParam(":USER",$user_emp);
-			$inser_empleado->bindParam(":PASS",$pass_emp);
-			$inser_empleado->bindParam(":ESTADO",$estado_emp);
-			$inser_empleado->bindParam(":NIVEL",$nivel_emp);
+			$inser_elemento->bindParam(":TIPOAVE",$tipo_ave);
+			$inser_elemento->bindParam(":NOM_ELEMENTO",$nom_elemento);
+			$inser_elemento->bindParam(":COLOR_ELEMENTO",$color_elemento);
+			$inser_elemento->bindParam(":PESO_ELEMENTO",$peso_elemento );
+			$inser_elemento->bindParam(":LINEA_GENETICA",$linea_genetica);
+			$inser_elemento->bindParam(":CANT_VACUNAS",$cant_vacunas);
+			$inser_elemento->bindParam(":COSTO_UND",$costo_unidad);
+			$inser_elemento->bindParam(":COSTO_CAJA",$costo_caja);
+			$inser_elemento->bindParam(":NOMBRE_IMAGEN",$nombre_imagen);
 
-			$inser_empleado->execute();
-			print "INSERCION ok";
+			$carpeta_destino=$_SERVER['DOCUMENT_ROOT'].'/AGRAVIS/PROYECTO_PP1_AGRAVIS/subidas/';
+			move_uploaded_file($_FILES['img_elemento']['tmp_name'], $carpeta_destino.$nombre_imagen);
+
+			$inser_elemento->execute();
+
+			print "INSERCION OK";
 
 
 

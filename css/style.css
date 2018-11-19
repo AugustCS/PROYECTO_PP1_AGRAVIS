@@ -10,6 +10,9 @@ a,span,img{
 a,span,h1,h2,h3,h4,h5,h6,p,li,input,label,textarea,option,select{
 	font-family: 'Niramit', sans-serif;
 }
+textarea{
+	font-size: 14px;
+}
 .box-cargados{
 	width:100%;
 	height: 100%;

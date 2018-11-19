@@ -1,4 +1,6 @@
+<!DOCTYPE html>
 <html>
+<head>
 	<script>
 		function soloNumeros(e){
 	       key = e.keyCode || e.which;
@@ -18,11 +20,14 @@
 	        }
 	    }
     </script>
+    <script src="js/jquery.js"></script>
+	<script src="js/logica.js"></script>
+</head>
 <body>
 	<div class="box-cargados">
 		<div class="box-cargados-left">
 			<h1>Elemento</h1>
-			<form action="">
+			<form id="form-reg-elemento" method="POST" enctype="multipart/form-data">
 				<fieldset>
 					<label>Tipo ave</label><br>
 					<select name="tipo_ave" id="opciones_tipo_ave" class="cajas-texto">
@@ -33,15 +38,15 @@
 				</fieldset><br>
 				<fieldset>
 					<label>Nombre</label><br>
-					<input type="text" class="cajas-texto" placeholder="Escribe aqui" required>
+					<input type="text" class="cajas-texto" placeholder="Escribe aqui" name="nom_elemento" required>
 				</fieldset><br>
 				<fieldset>
 					<label>Color</label><br>
-					<input type="text" class="cajas-texto" placeholder="Escribe aqui" required>
+					<input type="text" class="cajas-texto" placeholder="Escribe aqui" name="color_elemento" required>
 				</fieldset><br>
 				<fieldset>
 					<label>Peso</label><br>
-					<input type="text" class="cajas-texto" placeholder="Escribe aqui" required>
+					<input onkeypress="return soloNumeros(event)" type="text" class="cajas-texto" placeholder="Escribe aqui" name="peso_elemento" required>
 				</fieldset><br>
 				<fieldset>
 					<label>Linea genetica</label><br>
@@ -53,19 +58,19 @@
 				</fieldset><br>
 				<fieldset>
 					<label>Cantidad vacunas</label><br>
-					<input onkeypress="return soloNumeros(event)" type="text" class="cajas-texto" placeholder="Escribe aqui" required>
+					<input onkeypress="return soloNumeros(event)" type="text" class="cajas-texto" placeholder="Escribe aqui" name="cant_vacunas" required>
 				</fieldset><br>
 				<fieldset>
 					<label>Costo unidad</label><br>
-					<input onkeypress="return soloNumeros(event)" type="text" class="cajas-texto" placeholder="Escribe aqui" required>
+					<input onkeypress="return soloNumeros(event)" type="text" class="cajas-texto" placeholder="Escribe aqui" name="costo_unidad" required>
 				</fieldset><br>
 				<fieldset>
 					<label>Costo caja</label><br>
-					<input onkeypress="return soloNumeros(event)" type="text" class="cajas-texto" placeholder="Escribe aqui" required>
+					<input onkeypress="return soloNumeros(event)" type="text" class="cajas-texto" placeholder="Escribe aqui" name="costo_caja" required>
 				</fieldset><br>
 				<fieldset>
 					<label>Imagen</label><br>
-					<input type="file" class="cajas-texto" placeholder="Escribe aqui" required>
+					<input type="file" class="cajas-texto" placeholder="Escribe aqui" name="img_elemento" required>
 				</fieldset><br>	
 				<fieldset>
 					<input class="btn btn-primary" type="reset" value="Limpiar">

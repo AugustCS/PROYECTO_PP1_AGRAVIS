@@ -160,4 +160,29 @@ $(document).ready(function(){
 	       })       
   	})
 
+  	$("#form-reg-elemento").submit(function(e) {
+        e.preventDefault();
+        data.push({name:'tag',value:'registrar_elemento'});
+	       $.ajax({
+	         url: 'ventanas/registros_bd.php',
+	         type: 'POST',
+	         data: new FormData(this),
+	         contentType:false,
+	         cache:false,
+	         processData:false
+	       })
+	       .done(function(){
+	        	$(".box-aceptado").fadeIn("fast");
+	        	setTimeout(function(){
+	        		$(".box-aceptado").fadeOut("fast");
+	        	},2000)
+	       })
+	       .fail(function(){
+	         	$(".box-rechazado").fadeIn("fast");
+	        	setTimeout(function(){
+	        		$(".box-rechazado").fadeOut("fast");
+	        	},2000)
+	       })       
+  	})
+
 })
