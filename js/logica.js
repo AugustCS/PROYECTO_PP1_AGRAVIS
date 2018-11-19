@@ -31,10 +31,39 @@ $(document).ready(function(){
 		})
 	}
 
-	lanzarContenido("#reg-usuarios",".box-contenido","reg_usuarios.php");
 	lanzarContenido("#reg-empleados",".box-contenido","reg_empleados.php");
 	lanzarContenido("#reg-linea-genetica",".box-contenido","reg_linea_genetica.php");
 	lanzarContenido("#reg-tipo-ave",".box-contenido","reg_tipo_ave.php");
 	lanzarContenido("#reg-elemento",".box-contenido","reg_elemento.php");
+	lanzarContenido("#reg-cliente",".box-contenido","reg_cliente.php");
+	lanzarContenido("#reg-courier",".box-contenido","reg_courier.php");
+
+	$("#form-reg-personal").submit(function(e) {
+        e.preventDefault();
+        var data=$(this).serializeArray();
+        data.push({name:'tag',value:'registrar_personal'});
+	       
+	       $.ajax({
+	         url: 'ventanas/registros_bd.php',
+	         type: 'POST',
+	         dataType: 'json',
+	         data: data,
+	         // beforeSend:function(){
+	            
+	         // }
+	       })
+	       .done(function() {
+	        	$(".box-aceptado").fadeIn("fast");
+	        	setTimeout(function(){
+	        		$(".box-aceptado").fadeOut("fast");
+	        	},2000)
+	       })
+	       .fail(function() {
+	         	$(".box-rechazado").fadeIn("fast");
+	        	setTimeout(function(){
+	        		$(".box-rechazado").fadeOut("fast");
+	        	},2000)
+	       })       
+  		})
 
 })

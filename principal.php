@@ -16,10 +16,12 @@
 	<link rel="icon" href="img/logo.png">
 </head>
 <body>
-	<!-- <div class="bar-sup">
-		<img src="img/logoa.png">
-		<h1>AGRAVIS E.I.R.L.</h1>
-	</div>  -->
+	<div class="box-aceptado">
+		<p>REGISTRADO INGRESADO CORRECTAMENTE</p>
+	</div>
+	<div class="box-rechazado">
+		<p>ERROR EN EL REGISTRO SOLICITADO</p>
+	</div>
 	<div class="bar-lat">
 
 		<img src="img/logoa.png" title="AGRAVIS E.I.R.L.">
@@ -27,19 +29,19 @@
 
 		<h3 class="t-1"><i class="fas fa-file-signature"></i> Registros </h3>
 		<div class="menu-lat lat-1">
-			<a id="reg-usuarios">Registrar Empleados</a>
+			<a id="reg-empleados">Registrar Empleados</a>
 			<a id="reg-linea-genetica">Registrar Linea Genética</a>
 			<a id="reg-tipo-ave">Registrar Tipo Ave</a>
 			<a id="reg-elemento">Registrar Elemento</a>
 			<a id="reg-cliente">Registrar Cliente</a>
+			<a id="reg-courier">Registrar Courier</a>
 		</div>
 
-		<h3 class="t-2"><i class="fas fa-chart-pie"></i> Consultas </h3>
+		<h3 class="t-2"><i class="fas fa-chart-pie"></i> Generar Pedido</h3>
 		<div class="menu-lat lat-2">
 			<a href="">Sub Opcion 2</a>
 			<a href="">Sub Opcion 2</a>
-			<a href="">Sub Opcion 2</a>
-			<a href="">Sub Opcion 2</a>
+			
 		</div>
 
 		<h3 class="t-3"><i class="fas fa-edit"></i> Modificaciones </h3>		

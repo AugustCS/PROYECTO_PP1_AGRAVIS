@@ -6,11 +6,11 @@
 			<form action="">
 				<fieldset>
 					<label>Nombre</label><br>
-					<input class="cajas-texto" type="text" placeholder="Escriba aqui">
+					<input class="cajas-texto" type="text" placeholder="Escribe aqui">
 				</fieldset><br>
 				<fieldset>
 					<label>Descripcion</label><br>
-					<textarea class="cajas-texto" placeholder="Escriba aqui" ></textarea>
+					<textarea class="cajas-texto texto-ajustado" placeholder="Escribe aqui" ></textarea>
 				</fieldset><br>
 				<input type="reset" value="Limpiar">
 				<input type="submit" value="Grabar">
