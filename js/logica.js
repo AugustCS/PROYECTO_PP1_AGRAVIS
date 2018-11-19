@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+
 	$(".menu-lat li").click(function(){
 		$(".menu-sub-lat").toggle("fast");
 	})
@@ -38,19 +39,16 @@ $(document).ready(function(){
 	lanzarContenido("#reg-cliente",".box-contenido","reg_cliente.php");
 	lanzarContenido("#reg-courier",".box-contenido","reg_courier.php");
 
+	/*INSERCIONES EN LA BD MEDIANTE AJAX*/
 	$("#form-reg-personal").submit(function(e) {
         e.preventDefault();
         var data=$(this).serializeArray();
         data.push({name:'tag',value:'registrar_personal'});
-	       
 	       $.ajax({
 	         url: 'ventanas/registros_bd.php',
 	         type: 'POST',
 	         dataType: 'json',
-	         data: data,
-	         // beforeSend:function(){
-	            
-	         // }
+	         data: data
 	       })
 	       .done(function() {
 	        	$(".box-aceptado").fadeIn("fast");
@@ -64,6 +62,102 @@ $(document).ready(function(){
 	        		$(".box-rechazado").fadeOut("fast");
 	        	},2000)
 	       })       
-  		})
+  	})
+
+  	$("#form-reg-lin-gene").submit(function(e) {
+        e.preventDefault();
+        var data=$(this).serializeArray();
+        data.push({name:'tag',value:'registrar_linea_genetica'});
+	       $.ajax({
+	         url: 'ventanas/registros_bd.php',
+	         type: 'POST',
+	         dataType: 'json',
+	         data: data
+	       })
+	       .done(function() {
+	        	$(".box-aceptado").fadeIn("fast");
+	        	setTimeout(function(){
+	        		$(".box-aceptado").fadeOut("fast");
+	        	},2000)
+	       })
+	       .fail(function() {
+	         	$(".box-rechazado").fadeIn("fast");
+	        	setTimeout(function(){
+	        		$(".box-rechazado").fadeOut("fast");
+	        	},2000)
+	       })       
+  	})
+
+  	$("#form-tipo-ave").submit(function(e) {
+        e.preventDefault();
+        var data=$(this).serializeArray();
+        data.push({name:'tag',value:'registrar_tipo_ave'});
+	       $.ajax({
+	         url: 'ventanas/registros_bd.php',
+	         type: 'POST',
+	         dataType: 'json',
+	         data: data
+	       })
+	       .done(function() {
+	        	$(".box-aceptado").fadeIn("fast");
+	        	setTimeout(function(){
+	        		$(".box-aceptado").fadeOut("fast");
+	        	},2000)
+	       })
+	       .fail(function() {
+	         	$(".box-rechazado").fadeIn("fast");
+	        	setTimeout(function(){
+	        		$(".box-rechazado").fadeOut("fast");
+	        	},2000)
+	       })       
+  	})
+
+  	$("#form-courier").submit(function(e) {
+        e.preventDefault();
+        var data=$(this).serializeArray();
+        data.push({name:'tag',value:'registrar_courier'});
+	       $.ajax({
+	         url: 'ventanas/registros_bd.php',
+	         type: 'POST',
+	         dataType: 'json',
+	         data: data
+	       })
+	       .done(function(){
+	        	$(".box-aceptado").fadeIn("fast");
+	        	setTimeout(function(){
+	        		$(".box-aceptado").fadeOut("fast");
+	        	},2000)
+	       })
+	       .fail(function(){
+	         	$(".box-rechazado").fadeIn("fast");
+	        	setTimeout(function(){
+	        		$(".box-rechazado").fadeOut("fast");
+	        	},2000)
+	       })       
+  	})
+
+  	$("#form-cliente").submit(function(e) {
+        e.preventDefault();
+        var data=$(this).serializeArray();
+        data.push({name:'tag',value:'registrar_cliente'});
+	       $.ajax({
+	         url: 'ventanas/registros_bd.php',
+	         type: 'POST',
+	         dataType: 'json',
+	         data: data
+	       })
+	       .done(function(){
+	        	$(".box-aceptado").fadeIn("fast");
+	        	setTimeout(function(){
+	        		$(".box-aceptado").fadeOut("fast");
+	        	},2000)
+	       })
+	       .fail(function(){
+	         	$(".box-rechazado").fadeIn("fast");
+	        	setTimeout(function(){
+	        		$(".box-rechazado").fadeOut("fast");
+	        	},2000)
+	       })       
+  	})
 
 })

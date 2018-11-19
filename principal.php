@@ -64,7 +64,7 @@
 			<div class="box-user">
 				<span id="linkusuario">Bienvenido <?php print $_SESSION["usuario"];?> <i class="far fa-user-circle"></i> <i class="fas fa-angle-down"></i></span>
 				<div class="box-hide-user">
-					<a href="cerrar_sesion.php" style="color:white;">Cerrar Sesion <i class="fas fa-times-circle"></i></a>
+					<a id="linkcerrar" href="cerrar_sesion.php" style="color:white;">Cerrar Sesion <i class="fas fa-times-circle"></i></a>
 				</div>
 			</div>
 			<div class="clear"></div>

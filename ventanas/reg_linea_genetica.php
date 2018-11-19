@@ -1,19 +1,24 @@
+<!DOCTYPE html>
 <html>
+<head>
+	<script src="js/jquery.js"></script>
+	<script src="js/logica.js"></script>
+</head>
 <body>
 	<div class="box-cargados">
 		<div class="box-cargados-left">
 			<h1>Linea Genética</h1>
-			<form action="">
+			<form id="form-reg-lin-gene" method="POST">
 				<fieldset>
 					<label>Nombre</label><br>
-					<input class="cajas-texto" type="text" placeholder="Escribe aqui">
+					<input class="cajas-texto" type="text" placeholder="Escriba aqui" name="nom_lin_gene" required>
 				</fieldset><br>
 				<fieldset>
 					<label>Descripcion</label><br>
-					<textarea class="cajas-texto texto-ajustado" placeholder="Escribe aqui" ></textarea>
+					<textarea class="cajas-texto texto-ajustado" placeholder="Escriba aqui" name="des_lin_gene" required></textarea>
 				</fieldset><br>
-				<input type="reset" value="Limpiar">
-				<input type="submit" value="Grabar">
+				<input class="btn btn-primary" type="reset" value="Limpiar">
+				<input class="btn btn-success" type="submit" value="Grabar">
 			</form>
 		</div>
 		<div class="box-cargados-right">

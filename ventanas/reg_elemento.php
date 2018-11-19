@@ -24,8 +24,11 @@
 			<h1>Elemento</h1>
 			<form action="">
 				<fieldset>
-					<select name="" id="" class="cajas-texto">
-						<option value="">TIPO AVE</option>
+					<label>Tipo ave</label><br>
+					<select name="tipo_ave" id="opciones_tipo_ave" class="cajas-texto">
+						<script>
+							$("#opciones_tipo_ave").load("ventanas/opciones_tipo_ave.php");
+						</script>
 					</select>
 				</fieldset><br>
 				<fieldset>
@@ -41,8 +44,11 @@
 					<input type="text" class="cajas-texto" placeholder="Escribe aqui" required>
 				</fieldset><br>
 				<fieldset>
-					<select name="" id="" class="cajas-texto">
-						<option value="">LINEA GENETICA</option>
+					<label>Linea genetica</label><br>
+					<select name="linea_genetica" id="opciones_linea_genetica" class="cajas-texto">
+						<script>
+							$("#opciones_linea_genetica").load("ventanas/opciones_linea_genetica.php");
+						</script>
 					</select>
 				</fieldset><br>
 				<fieldset>
@@ -62,8 +68,8 @@
 					<input type="file" class="cajas-texto" placeholder="Escribe aqui" required>
 				</fieldset><br>	
 				<fieldset>
-					<input type="submit" value="Grabar">
-					<input type="reset" value="Limpiar">
+					<input class="btn btn-primary" type="reset" value="Limpiar">
+					<input class="btn btn-success" type="submit" value="Grabar">
 				</fieldset>
 			</form>
 		</div>

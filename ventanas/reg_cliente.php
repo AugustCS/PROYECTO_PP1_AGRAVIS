@@ -1,4 +1,6 @@
+<!DOCTYPE html>
 <html>
+<head>
 	<script>
 		function soloNumeros(e){
 	       key = e.keyCode || e.which;
@@ -18,42 +20,45 @@
 	        }
 	    }
     </script>
+    <script src="js/jquery.js"></script>
+	<script src="js/logica.js"></script>
+</head>
 	<body>
 		<div class="box-cargados">
 			<div class="box-cargados-left">
 				<h1>Cliente</h1>
-				<form action="">
+				<form id="form-cliente" method="POST">
 					<fieldset>
 						<label>Nombre</label><br>
-						<input type="text" class="cajas-texto" placeholder="Escribe aqui">
+						<input type="text" class="cajas-texto" placeholder="Escribe aqui" name="nom_cliente" required>
 					</fieldset><br>
 					<fieldset>
 						<label>DNI</label><br>
-						<input onkeypress="return soloNumeros(event)" type="text" class="cajas-texto" placeholder="Escribe aqui" maxlength="8" minlength="8">
+						<input onkeypress="return soloNumeros(event)" type="text" class="cajas-texto" placeholder="Escribe aqui" maxlength="8" minlength="8" name="dni_cliente" required>
 					</fieldset><br>
 					<fieldset>
 						<label>RUC</label><br>
-						<input onkeypress="return soloNumeros(event)" type="text" class="cajas-texto" placeholder="Escribe aqui" maxlength="11" minlength="11">
+						<input onkeypress="return soloNumeros(event)" type="text" class="cajas-texto" placeholder="Escribe aqui" maxlength="11" minlength="11" name="ruc_cliente" required>
 					</fieldset><br>
 					<fieldset>
 						<label>Email</label><br>
-						<input type="email" class="cajas-texto" placeholder="Escribe aqui">
+						<input type="email" class="cajas-texto" placeholder="Escribe aqui" name="email_cliente" required>
 					</fieldset><br>
 					<fieldset>
 						<label>Direccion</label><br>
-						<textarea class="cajas-texto texto-ajustado" placeholder="Escribe aqui"></textarea>
+						<textarea class="cajas-texto texto-ajustado" placeholder="Escribe aqui" name="dire_cliente" required></textarea>
 					</fieldset><br>
 					<fieldset>
 						<label>Telefono 1</label><br>
-						<input type="text" class="cajas-texto" placeholder="Escribe aqui">
+						<input onkeypress="return soloNumeros(event)" type="text" maxlength="9"class="cajas-texto" placeholder="Escribe aqui" name="fono1_cliente" required>
 					</fieldset><br>
 					<fieldset>
 						<label>Telefono 2</label><br>
-						<input type="text" class="cajas-texto" placeholder="Escribe aqui">
+						<input onkeypress="return soloNumeros(event)" type="text" class="cajas-texto" maxlength="9" placeholder="Escribe aqui" name="fono2_cliente" required>
 					</fieldset><br>
 					<fieldset>
-						<input type="reset" value="Limpiar">
-						<input type="submit" value="Grabar">
+						<input class="btn btn-primary" type="reset" value="Limpiar">
+						<input class="btn btn-success" type="submit" value="Grabar">
 					</fieldset>
 				</form>
 			</div>

@@ -1,4 +1,6 @@
+<!DOCTYPE html>
 <html>
+<head>
 	<script>
 		function soloNumeros(e){
 	       key = e.keyCode || e.which;
@@ -18,29 +20,32 @@
 	        }
 	    }
     </script>
+    <script src="js/jquery.js"></script>
+	<script src="js/logica.js"></script>
+</head>
 	<body>
 		<div class="box-cargados">
 			<div class="box-cargados-left">
 				<h1>Courier</h1>
-				<form action="">
+				<form id="form-courier" method="POST">
 					<fieldset>
 						<label>Nombre</label><br>
-						<input type="text" class="cajas-texto" placeholder="Escribe aqui">
+						<input type="text" class="cajas-texto" placeholder="Escribe aqui" name="nom_courier">
 					</fieldset><br>
 					<fieldset>
 						<label>Linea envio</label><br>
-						<select name="" class="cajas-texto">
+						<select name="linea_envio" class="cajas-texto">
 							<option value="Terrestre">Terrestre</option>
-							<option value="Aérea">Aérea</option>
+							<option value="Aerea">Aérea</option>
 						</select>
 					</fieldset><br>
 					<fieldset>
 						<label>Costo Envio</label>
-						<input onkeypress="return soloNumeros(event)" type="text" class="cajas-texto" placeholder="Escribe aqui">
+						<input onkeypress="return soloNumeros(event)" type="text" class="cajas-texto" placeholder="Escribe aqui" name="costo_envio">
 					</fieldset><br>
 					<fieldset>
-						<input type="reset" value="Limpiar">
-						<input type="submit" value="Grabar">
+						<input class="btn btn-primary" type="reset" value="Limpiar">
+						<input class="btn btn-success" type="submit" value="Grabar">
 					</fieldset>
 				</form>
 			</div>

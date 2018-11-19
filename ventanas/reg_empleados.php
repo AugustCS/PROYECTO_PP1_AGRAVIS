@@ -20,14 +20,14 @@
 	        }
 	    }
     </script>
-    <script src="../js/jquery.js"></script>
-	<script src="../js/logica.js"></script>
+    <script src="js/jquery.js"></script>
+	<script src="js/logica.js"></script>
 </head>
 <body>
 	<div class="box-cargados">
 		<div class="box-cargados-left">
-			<h1>Registrar Empleados</h1>
-			<form id="form-reg-personal">
+			<h1>Empleados</h1>
+			<form id="form-reg-personal" method="POST">
 				<fieldset>
 					<label>Nombre</label><br>
 					<input class="cajas-texto" type="text" placeholder="Escribe aqui" name="nom_empleado" required>
@@ -61,7 +61,7 @@
 				</fieldset><br>
 				<fieldset>
 					<label>Nivel empleado</label><br>
-					<select name="nivel_empleado" id="" class="cajas-texto">
+					<select name="nivel_empleado" class="cajas-texto">
 						<option value="1">Administrador</option>
 						<option value="2">Jefe</option>
 						<option value="3">Empleado</option>

@@ -86,6 +86,9 @@ a,span,h1,h2,h3,h4,h5,h6,p,li,input,label,textarea,option,select{
 a{
 	cursor:pointer;
 }
+#linkusuario,#linkcerrar{
+	cursor:pointer;
+}
 .btn{
 	border:none;
 	padding: 8px 18px;
