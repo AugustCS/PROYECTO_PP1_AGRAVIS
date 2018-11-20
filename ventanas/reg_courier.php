@@ -50,7 +50,24 @@
 				</form>
 			</div>
 			<div class="box-cargados-right">
-				
+				<table>
+					<thead>
+						<tr>
+							<td colspan="4">LISTA DE COURIERS</td>
+						</tr>
+						<tr>
+							<td>ID</td>
+							<td>NOMBRE</td>
+							<td>LINEA ENVIO</td>
+							<td>COSTO ENVIO</td>
+						</tr>
+					</thead>
+					<tbody id="tabla_courier">
+						<script>
+							$("#tabla_courier").load("ventanas/con_courier.php");
+						</script>
+					</tbody>
+				</table>
 			</div>
 			<div class="clear"></div>
 		</div>

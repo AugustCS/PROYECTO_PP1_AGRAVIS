@@ -27,7 +27,7 @@
 	<div class="box-cargados">
 		<div class="box-cargados-left">
 			<h1>Elemento</h1>
-			<form id="form-reg-elemento" method="POST" enctype="multipart/form-data">
+			<form id="form-reg-elemento" method="POST">
 				<fieldset>
 					<label>Tipo ave</label><br>
 					<select name="tipo_ave" id="opciones_tipo_ave" class="cajas-texto">

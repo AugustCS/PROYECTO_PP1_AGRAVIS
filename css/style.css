@@ -7,7 +7,7 @@ a,span,img{
 	vertical-align: top;
 	text-decoration:none;
 }
-a,span,h1,h2,h3,h4,h5,h6,p,li,input,label,textarea,option,select{
+a,span,h1,h2,h3,h4,h5,h6,p,li,input,label,textarea,option,select,td{
 	font-family: 'Niramit', sans-serif;
 }
 textarea{
@@ -33,6 +33,19 @@ textarea{
 	height: 100%;
 	float:right;
 	background: gray;
+	padding: 20px;
+}
+.box-cargados-right table{
+	border:1px solid black;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	background: white;
+}
+td{
+	padding: 5px;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
 }
 .cajas-texto{
 	width:90%;
@@ -89,9 +102,9 @@ textarea{
 a{
 	cursor:pointer;
 }
-#linkusuario,#linkcerrar{
+/*#linkusuario,#linkcerrar{
 	cursor:pointer;
-}
+}*/
 .btn{
 	border:none;
 	padding: 8px 18px;

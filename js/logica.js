@@ -126,7 +126,9 @@ $(document).ready(function(){
 	        	$(".box-aceptado").fadeIn("fast");
 	        	setTimeout(function(){
 	        		$(".box-aceptado").fadeOut("fast");
-	        	},2000)
+	        	},2000);
+	        	$("#tabla_courier").load("ventanas/con_courier.php");
+
 	       })
 	       .fail(function(){
 	         	$(".box-rechazado").fadeIn("fast");
@@ -162,22 +164,22 @@ $(document).ready(function(){
 
   	$("#form-reg-elemento").submit(function(e) {
         e.preventDefault();
-        data.push({name:'tag',value:'registrar_elemento'});
+        var formData = new FormData(this);
 	       $.ajax({
-	         url: 'ventanas/registros_bd.php',
+	         url: 'ventanas/registrar_elemento.php',
 	         type: 'POST',
-	         data: new FormData(this),
-	         contentType:false,
+	         data: formData,
 	         cache:false,
-	         processData:false
+             contentType: false,
+	         processData: false,
 	       })
-	       .done(function(){
+	       .done(function(data){
 	        	$(".box-aceptado").fadeIn("fast");
 	        	setTimeout(function(){
 	        		$(".box-aceptado").fadeOut("fast");
 	        	},2000)
 	       })
-	       .fail(function(){
+	       .fail(function(data){
 	         	$(".box-rechazado").fadeIn("fast");
 	        	setTimeout(function(){
 	        		$(".box-rechazado").fadeOut("fast");
