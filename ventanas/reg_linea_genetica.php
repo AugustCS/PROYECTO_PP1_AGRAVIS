@@ -22,7 +22,23 @@
 			</form>
 		</div>
 		<div class="box-cargados-right">
-			
+			<table>
+					<thead>
+						<tr>
+							<td colspan="4">LISTA DE LINEAS GENETICAS</td>
+						</tr>
+						<tr>
+							<td>ID</td>
+							<td>NOMBRE</td>
+							<td>DESCRIPCION</td>
+						</tr>
+					</thead>
+					<tbody id="tabla_lingenetica">
+						<script>
+							$("#tabla_lingenetica").load("ventanas/con_lingenetica.php");
+						</script>
+					</tbody>
+			</table>
 		</div>
 		<div class="clear"></div>
 	</div>

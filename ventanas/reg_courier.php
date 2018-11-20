@@ -30,7 +30,7 @@
 				<form id="form-courier" method="POST">
 					<fieldset>
 						<label>Nombre</label><br>
-						<input type="text" class="cajas-texto" placeholder="Escribe aqui" name="nom_courier">
+						<input type="text" class="cajas-texto" placeholder="Escribe aqui" name="nom_courier" required>
 					</fieldset><br>
 					<fieldset>
 						<label>Linea envio</label><br>
@@ -41,7 +41,7 @@
 					</fieldset><br>
 					<fieldset>
 						<label>Costo Envio</label>
-						<input onkeypress="return soloNumeros(event)" type="text" class="cajas-texto" placeholder="Escribe aqui" name="costo_envio">
+						<input onkeypress="return soloNumeros(event)" type="text" class="cajas-texto" placeholder="Escribe aqui" name="costo_envio" required>
 					</fieldset><br>
 					<fieldset>
 						<input class="btn btn-primary" type="reset" value="Limpiar">

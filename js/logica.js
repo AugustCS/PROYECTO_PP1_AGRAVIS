@@ -1,13 +1,12 @@
 $(document).ready(function(){
 
 
-	$(".menu-lat li").click(function(){
-		$(".menu-sub-lat").toggle("fast");
-	})
-
 	function menulateral(menu,lista){
 		$(menu).click(function(){
-			$(lista).toggle("fast");
+			$(lista).fadeIn("swing");
+			setTimeout(function(){
+				$(lista).fadeOut("swing");
+			},5000)
 		})
 	}
 
@@ -16,8 +15,11 @@ $(document).ready(function(){
 	menulateral(".t-3",".lat-3");
 	menulateral(".t-4",".lat-4");
 
-	$("#linkusuario").click(function(){
-		$(".box-hide-user").toggle("fast");
+	$("#linkusuario").hover(function(){
+		$(".box-hide-user").fadeIn("swing");
+		setTimeout(function(){
+			$(".box-hide-user").fadeOut("swing");
+		},1000)
 	})
 
 	$(".menu-lat a").click(function(e){
@@ -102,7 +104,8 @@ $(document).ready(function(){
 	        	$(".box-aceptado").fadeIn("fast");
 	        	setTimeout(function(){
 	        		$(".box-aceptado").fadeOut("fast");
-	        	},2000)
+	        	},2000);
+	        	$("#tabla_tipo_ave").load("ventanas/con_tipoave.php");
 	       })
 	       .fail(function() {
 	         	$(".box-rechazado").fadeIn("fast");
