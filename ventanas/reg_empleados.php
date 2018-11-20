@@ -27,7 +27,7 @@
 	<div class="box-cargados">
 		<div class="box-cargados-left">
 			<h1>Empleados</h1>
-			<form id="form-reg-personal" method="POST">
+			<form id="form-reg-empleado" method="POST">
 				<fieldset>
 					<label>Nombre</label><br>
 					<input class="cajas-texto" type="text" placeholder="Escribe aqui" name="nom_empleado" required>
@@ -71,8 +71,27 @@
 				<input class="btn btn-success" type="submit" value="Grabar">
 			</form>
 		</div>
-		<div class="box-cargados-right">
-			
+		<div class="box-cargados-right" style="padding:5px;">
+			<table>
+				<thead>
+					<tr>
+						<td colspan="6" class="barrita-roja">LISTADO DE EMPLEADOS</td>
+					</tr>
+					<tr class="barrita-amarilla">
+						<td>ID</td>
+						<td>NOMBRE</td>
+						<td>EMAIL</td>
+						<td>CARGO</td>
+						<td>USERNAME</td>
+						<td>ESTADO</td>
+					</tr>
+				</thead>
+				<tbody id="tabla_empleados">
+					<script>
+						$("#tabla_empleados").load("ventanas/con_empleados.php");
+					</script>
+				</tbody>
+			</table>
 		</div>
 		<div class="clear"></div>
 	</div>

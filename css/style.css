@@ -47,6 +47,15 @@ td{
 	border-bottom: 1px solid black;
 	border-right: 1px solid black;
 }
+.barrita-roja{
+	background: #ED303B;
+	color:white;
+}
+.barrita-amarilla{
+	background: #F5B003;
+	color:white;
+}
+
 .cajas-texto{
 	width:90%;
 	padding: 3px;

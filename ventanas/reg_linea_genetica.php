@@ -25,9 +25,9 @@
 			<table>
 					<thead>
 						<tr>
-							<td colspan="4">LISTA DE LINEAS GENETICAS</td>
+							<td colspan="4" class="barrita-roja">LISTA DE LINEAS GENETICAS</td>
 						</tr>
-						<tr>
+						<tr class="barrita-amarilla">
 							<td>ID</td>
 							<td>NOMBRE</td>
 							<td>DESCRIPCION</td>

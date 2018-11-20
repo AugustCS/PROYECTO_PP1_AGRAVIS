@@ -27,9 +27,9 @@
 			<table>
 					<thead>
 						<tr>
-							<td colspan="3">LISTA DE TIPOS DE AVE</td>
+							<td colspan="3" class="barrita-roja">LISTA DE TIPOS DE AVE</td>
 						</tr>
-						<tr>
+						<tr class="barrita-amarilla">
 							<td>ID</td>
 							<td>NOMBRE</td>
 							<td>DESCRIPCION</td>

@@ -53,9 +53,9 @@
 				<table>
 					<thead>
 						<tr>
-							<td colspan="4">LISTA DE COURIERS</td>
+							<td colspan="4" class="barrita-roja">LISTA DE COURIERS</td>
 						</tr>
-						<tr>
+						<tr class="barrita-amarilla">
 							<td>ID</td>
 							<td>NOMBRE</td>
 							<td>LINEA ENVIO</td>

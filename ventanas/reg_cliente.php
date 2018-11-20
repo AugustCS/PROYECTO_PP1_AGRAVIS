@@ -62,8 +62,29 @@
 					</fieldset>
 				</form>
 			</div>
-			<div class="box-cargados-right">
-				
+			<div class="box-cargados-right" style="padding:5px;">
+				<table>
+					<thead>
+						<tr>
+							<td colspan="8" class="barrita-roja">LISTADO DE CLIENTES</td>
+						</tr>
+						<tr class="barrita-amarilla">
+							<td>ID</td>
+							<td>NOMBRE</td>
+							<td>DNI</td>
+							<td>RUC</td>
+							<td>EMAIL</td>
+							<td>DIRECCION</td>
+							<td>FONO 1</td>
+							<td>FONO 2</td>
+						</tr>
+					</thead>
+					<tbody id="tabla_clientes">
+						<script>
+							$("#tabla_clientes").load("ventanas/con_clientes.php");
+						</script>
+					</tbody>
+				</table>
 			</div>
 			<div class="clear"></div>
 		</div>

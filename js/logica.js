@@ -42,10 +42,10 @@ $(document).ready(function(){
 	lanzarContenido("#reg-courier",".box-contenido","reg_courier.php");
 
 	/*INSERCIONES EN LA BD MEDIANTE AJAX*/
-	$("#form-reg-personal").submit(function(e) {
+	$("#form-reg-empleado").submit(function(e) {
         e.preventDefault();
         var data=$(this).serializeArray();
-        data.push({name:'tag',value:'registrar_personal'});
+        data.push({name:'tag',value:'registrar_empleado'});
 	       $.ajax({
 	         url: 'ventanas/registros_bd.php',
 	         type: 'POST',
@@ -56,7 +56,9 @@ $(document).ready(function(){
 	        	$(".box-aceptado").fadeIn("fast");
 	        	setTimeout(function(){
 	        		$(".box-aceptado").fadeOut("fast");
-	        	},2000)
+	        	},2000);
+	        	$("#tabla_empleados").load("ventanas/con_empleados.php");
+	        	$(".cajas-texto").val("");
 	       })
 	       .fail(function() {
 	         	$(".box-rechazado").fadeIn("fast");
@@ -80,7 +82,9 @@ $(document).ready(function(){
 	        	$(".box-aceptado").fadeIn("fast");
 	        	setTimeout(function(){
 	        		$(".box-aceptado").fadeOut("fast");
-	        	},2000)
+	        	},2000);
+	        	$("#tabla_lingenetica").load("ventanas/con_lingenetica.php");
+	        	$(".cajas-texto").val("");
 	       })
 	       .fail(function() {
 	         	$(".box-rechazado").fadeIn("fast");
@@ -106,6 +110,7 @@ $(document).ready(function(){
 	        		$(".box-aceptado").fadeOut("fast");
 	        	},2000);
 	        	$("#tabla_tipo_ave").load("ventanas/con_tipoave.php");
+	        	$(".cajas-texto").val("");
 	       })
 	       .fail(function() {
 	         	$(".box-rechazado").fadeIn("fast");
@@ -131,6 +136,7 @@ $(document).ready(function(){
 	        		$(".box-aceptado").fadeOut("fast");
 	        	},2000);
 	        	$("#tabla_courier").load("ventanas/con_courier.php");
+	        	$(".cajas-texto").val("");
 
 	       })
 	       .fail(function(){
@@ -155,7 +161,9 @@ $(document).ready(function(){
 	        	$(".box-aceptado").fadeIn("fast");
 	        	setTimeout(function(){
 	        		$(".box-aceptado").fadeOut("fast");
-	        	},2000)
+	        	},2000);
+	        	$("#tabla_clientes").load("ventanas/con_clientes.php");
+	        	$(".cajas-texto").val("");
 	       })
 	       .fail(function(){
 	         	$(".box-rechazado").fadeIn("fast");
@@ -180,7 +188,8 @@ $(document).ready(function(){
 	        	$(".box-aceptado").fadeIn("fast");
 	        	setTimeout(function(){
 	        		$(".box-aceptado").fadeOut("fast");
-	        	},2000)
+	        	},2000);
+	        	$(".cajas-texto").val("");
 	       })
 	       .fail(function(data){
 	         	$(".box-rechazado").fadeIn("fast");

@@ -5,7 +5,7 @@
 
 	if(isset($tag) && $tag!==""){
 
-		if($tag=='registrar_personal'){
+		if($tag=='registrar_empleado'){
 			$nombre_emp = $_POST["nom_empleado"];
 			$mail_emp = $_POST["mail_empleado"];
 			$dni_emp = $_POST["dni_empleado"];
