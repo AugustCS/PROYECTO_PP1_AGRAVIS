@@ -78,8 +78,13 @@
 				</fieldset>
 			</form>
 		</div>
-		<div class="box-cargados-right">
-			
+		<div class="box-cargados-right" style="padding:5px;">
+			<h1 style="background:#ED303B;color:white;padding: 5px;text-align: center;margin-bottom: 5px; ">REGISTRO DE ELEMENTOS</h1>
+			<div id="tabla_elemento">
+				<script>
+				$("#tabla_elemento").load("ventanas/con_elementos.php");
+				</script>
+			</div>
 		</div>
 		<div class="clear"></div>
 	</div>

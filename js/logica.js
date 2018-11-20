@@ -189,6 +189,7 @@ $(document).ready(function(){
 	        	setTimeout(function(){
 	        		$(".box-aceptado").fadeOut("fast");
 	        	},2000);
+	        	$("#tabla_elemento").load("ventanas/con_elementos.php");
 	        	$(".cajas-texto").val("");
 	       })
 	       .fail(function(data){

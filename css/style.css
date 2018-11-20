@@ -215,6 +215,36 @@ a{
 #linkusuario,#linkcerrar{
 	cursor:pointer;
 }
+.box-elementos{
+	padding: 5px;
+	border:1px solid white;
+	background: #F5B003;
+	width:100%;
+	height: 120px;
+	margin-bottom: 5px;
+}
+.box-elementos-left{
+	float:left;
+	width:80%;
+	height: 100%;
+}
+.box-elementos-left span{
+	padding: 2px;
+	width:48%;
+	color:white;
+}
+.box-elementos-left strong{
+	color:black;
+}
+.box-elementos-right{
+	float:right;
+	width:20%;
+	height: 100%;
+}
+.box-elementos-right img{
+	width:100%;
+	height: 100%;
+}
 /************************* ESTILOS LOGIN *********************/
 .body-login{
 	width:100%;
