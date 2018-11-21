@@ -3,7 +3,7 @@ $(document).ready(function(){
 	/*CODIGO MODAL*/
 	$("#cerrar-modal").click(function(){
 		$(".box-modal").fadeOut("swing");
-	})
+	})		
 
 	/*CODIGO MENU LATERAL*/
 	function menulateral(menu,lista){

@@ -194,7 +194,7 @@ a{
 	margin-right: 10px;
 	margin-top: 5px;
 	padding: 10px 15px;
-	border-radius: 20px;
+	border-radius: 5px;
 	border:1px solid black;
 	background:#4C4C4A;
 	color:white;	
@@ -262,6 +262,7 @@ a{
 	position: absolute;
 	right: 50px;
 	top:50px;
+	cursor:pointer;
 }
 #img-modal{
 	width:550px;
@@ -270,6 +271,8 @@ a{
 	top:50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+	border-radius: 5px;
+	border:2px solid white;
 }
 /************************* ESTILOS LOGIN *********************/
 .body-login{

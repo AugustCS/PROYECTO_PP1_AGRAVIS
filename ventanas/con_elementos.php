@@ -18,20 +18,19 @@
 				<span>COSTO CAJA: S/. <strong><?php print $elementos[8];?></strong></span>
 			</div>
 			<div class="box-elementos-right">
-				<img id="img-elemento" src="<?php print 'subidas/'.$elementos[9];?>">
+				<img style="cursor:pointer;" src="<?php print 'subidas/'.$elementos[9];?>">
 			</div>
 			<div class="clear"></div>
-
-			<script>
-				$(".box-elementos-right img").click(function(){
-					var ruta = $(this).attr("src");
-					$("#img-modal").attr("src",ruta);
-					$(".box-modal").fadeIn("swing");
-					console.log(ruta);
-				})
-			</script>
-
 		</div>
+
+		<script>
+			/*CODIGO PARA MOSTRAR EL MODAL*/
+			$(".box-elementos-right img").click(function(){
+				var ruta = $(this).attr("src");
+				$("#img-modal").attr("src",ruta);
+				$(".box-modal").fadeIn("swing");
+			})	
+		</script>
 <?php
 	}
  ?>
