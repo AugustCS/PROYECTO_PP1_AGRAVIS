@@ -1,6 +1,11 @@
 $(document).ready(function(){
 
+	/*CODIGO MODAL*/
+	$("#cerrar-modal").click(function(){
+		$(".box-modal").fadeOut("swing");
+	})
 
+	/*CODIGO MENU LATERAL*/
 	function menulateral(menu,lista){
 		$(menu).click(function(){
 			$(lista).fadeIn("swing");
@@ -15,6 +20,7 @@ $(document).ready(function(){
 	menulateral(".t-3",".lat-3");
 	menulateral(".t-4",".lat-4");
 
+	/*CODIGO CAJA NOMBRE USUARIO*/
 	$("#linkusuario").hover(function(){
 		$(".box-hide-user").fadeIn("swing");
 		setTimeout(function(){

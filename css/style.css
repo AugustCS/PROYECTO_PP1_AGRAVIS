@@ -111,7 +111,6 @@ td{
 a{
 	cursor:pointer;
 }
-
 .btn{
 	border:none;
 	padding: 8px 18px;
@@ -244,6 +243,33 @@ a{
 .box-elementos-right img{
 	width:100%;
 	height: 100%;
+}
+.box-modal{
+	width:100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	top:0;
+	left: 0;
+	display: none;
+}
+.box-in-modal{
+	width:100%;
+	height:100%;
+	position:relative;	
+}
+#cerrar-modal{
+	position: absolute;
+	right: 50px;
+	top:50px;
+}
+#img-modal{
+	width:550px;
+	height: 350px;
+	position:absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
 /************************* ESTILOS LOGIN *********************/
 .body-login{

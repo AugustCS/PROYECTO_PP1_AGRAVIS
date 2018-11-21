@@ -16,8 +16,14 @@
 	<link rel="icon" href="img/logo.png">
 </head>
 <body>
+	<div class="box-modal">
+		<div class="box-in-modal">
+			<button id="cerrar-modal" class="btn btn-fail">Cerrar</button>
+			<img id="img-modal" src="">
+		</div>
+	</div>
 	<div class="box-aceptado">
-		<p>REGISTRADO INGRESADO CORRECTAMENTE</p>
+		<p>REGISTRO INGRESADO CORRECTAMENTE</p>
 	</div>
 	<div class="box-rechazado">
 		<p>ERROR EN EL REGISTRO SOLICITADO</p>
@@ -27,14 +33,14 @@
 		<img src="img/logoa.png" title="AGRAVIS E.I.R.L.">
 		<h2> MENU <i class="fas fa-bars"></i></h2>
 
-		<h3 class="t-1"><i class="fas fa-file-signature"></i> Registros </h3>
+		<h3 class="t-1"><i class="fas fa-file-signature"></i> Registro </h3>
 		<div class="menu-lat lat-1">
-			<a id="reg-empleados">Registrar Empleados</a>
-			<a id="reg-linea-genetica">Registrar Linea Genética</a>
-			<a id="reg-tipo-ave">Registrar Tipo Ave</a>
-			<a id="reg-elemento">Registrar Elemento</a>
-			<a id="reg-cliente">Registrar Cliente</a>
-			<a id="reg-courier">Registrar Courier</a>
+			<a id="reg-empleados">Registro Empleados</a>
+			<a id="reg-linea-genetica">Registro Linea Genética</a>
+			<a id="reg-tipo-ave">Registro Tipo Ave</a>
+			<a id="reg-elemento">Registro Elemento</a>
+			<a id="reg-cliente">Registro Cliente</a>
+			<a id="reg-courier">Registro Courier</a>
 		</div>
 
 		<h3 class="t-2"><i class="fas fa-chart-pie"></i> Generar Pedido</h3>
