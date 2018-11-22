@@ -70,7 +70,7 @@
 				</fieldset><br>
 				<fieldset>
 					<label>Imagen</label><br>
-					<input type="file" class="cajas-texto" placeholder="Escribe aqui" name="img_elemento" required>
+					<input id="file" type="file" class="cajas-texto" placeholder="Escribe aqui" name="img_elemento" required>
 				</fieldset><br>	
 				<fieldset>
 					<input class="btn btn-primary" type="reset" value="Limpiar">

@@ -207,4 +207,16 @@ $(document).ready(function(){
 	       })       
   	})
 
+  	 $("#file").change(function() {
+        var file = this.files[0];
+        var imagefile = file.type;
+        var match= ["image/jpeg","image/png","image/jpg"];
+        if(!((imagefile==match[0]) || (imagefile==match[1]) || (imagefile==match[2]))){
+            alert('Por favor solo seleccione archivos del siguiente formato o extensión (JPEG/JPG/PNG).');
+            $("#file").val('');
+            return false;
+        }
+    });
+
+
 })
