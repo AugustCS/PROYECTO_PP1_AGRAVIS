@@ -76,7 +76,14 @@
 			<div class="clear"></div>
 		</div>
 		<div class="box-contenido">
-			
+			<div class="box-cargados b-wel">
+				<div class="box-welcome">
+					<div class="box-in-wel">
+						<h1>BIENVENIDO A AGRAVIS</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officia expedita, ipsum tenetur maxime, dolor praesentium unde quasi dolorum illo voluptas perferendis optio asperiores exercitationem enim similique ab hic voluptates.</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="clear"></div>

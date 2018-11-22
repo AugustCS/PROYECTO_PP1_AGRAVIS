@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+	
 	/*CODIGO MODAL*/
 	$("#cerrar-modal").click(function(){
 		$(".box-modal").fadeOut("swing");
@@ -34,6 +34,7 @@ $(document).ready(function(){
 
 	function lanzarContenido(link,contenido,archivo){
 		$(link).click(function(){
+			$(".b-wel").fadeOut("swing");
 			$(".menu-lat a").removeClass("active");
 			$(link).addClass("active");
 			$(contenido).load("ventanas/"+archivo);
