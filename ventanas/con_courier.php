@@ -9,6 +9,7 @@
 			<td><?php print $courier[0]; ?></td>
 			<td><?php print $courier[1]; ?></td>
 			<td><?php print $courier[2]; ?></td>
+			<td><?php print $courier[4]; ?></td>
 			<td><?php print $courier[3]; ?></td>
 		</tr>
 <?php

@@ -43,10 +43,10 @@
 			<a id="reg-courier">Registro Courier</a>
 		</div>
 
-		<h3 class="t-2"><i class="fas fa-chart-pie"></i> Generar Pedido</h3>
+		<h3 class="t-2"><i class="fas fa-chart-pie"></i> Pedido</h3>
 		<div class="menu-lat lat-2">
-			<a href="">Sub Opcion 2</a>
-			<a href="">Sub Opcion 2</a>
+			<a id="reg-pedido">Generar Pedido</a>
+			<a id="con-pedido">Consultar Pedido</a>
 			
 		</div>
 
@@ -57,13 +57,9 @@
 			<a href="">Sub Opcion 3</a>
 			<a href="">Sub Opcion 3</a>
 		</div>
-		<!-- <h3 class="t-4"><i class="fas fa-book"></i> Reportes </h3>
-		<div class="menu-lat lat-4">
-			<a href="">Sub Opcion 3</a>
-			<a href="">Sub Opcion 3</a>
-			<a href="">Sub Opcion 3</a>
-			<a href="">Sub Opcion 3</a>
-		</div> -->
+		<div class="box-cargando">
+			<span><i class="fas fa-spinner fa-spin"></i></span>
+		</div>
 	</div>
 	<div class="bar-content">
 		<div class="box-data-user">

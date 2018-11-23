@@ -47,6 +47,8 @@ $(document).ready(function(){
 	lanzarContenido("#reg-elemento",".box-contenido","reg_elemento.php");
 	lanzarContenido("#reg-cliente",".box-contenido","reg_cliente.php");
 	lanzarContenido("#reg-courier",".box-contenido","reg_courier.php");
+	lanzarContenido("#reg-pedido",".box-contenido","reg_pedido.php");
+	lanzarContenido("#con-pedido",".box-contenido","con_pedido.php");
 
 	/*INSERCIONES EN LA BD MEDIANTE AJAX*/
 	$("#form-reg-empleado").submit(function(e) {
@@ -57,7 +59,11 @@ $(document).ready(function(){
 	         url: 'ventanas/registros_bd.php',
 	         type: 'POST',
 	         dataType: 'json',
-	         data: data
+	         cache:false,
+	         data: data,
+	         beforeSend:function(){
+	           $(".box-cargando").css("display","block");
+			 }	
 	       })
 	       .done(function() {
 	        	$(".box-aceptado").fadeIn("fast");
@@ -72,7 +78,12 @@ $(document).ready(function(){
 	        	setTimeout(function(){
 	        		$(".box-rechazado").fadeOut("fast");
 	        	},2000)
-	       })       
+	       })   
+	        .always(function(){
+	       		setTimeout(function(){
+	         	  $(".box-cargando").fadeOut("fast");
+	       		},500)
+		   })     
   	})
 
   	$("#form-reg-lin-gene").submit(function(e) {
@@ -83,7 +94,11 @@ $(document).ready(function(){
 	         url: 'ventanas/registros_bd.php',
 	         type: 'POST',
 	         dataType: 'json',
-	         data: data
+	         cache:false,
+	         data: data,
+	         beforeSend:function(){
+	           $(".box-cargando").css("display","block");
+			 }	
 	       })
 	       .done(function() {
 	        	$(".box-aceptado").fadeIn("fast");
@@ -98,7 +113,12 @@ $(document).ready(function(){
 	        	setTimeout(function(){
 	        		$(".box-rechazado").fadeOut("fast");
 	        	},2000)
-	       })       
+	       }) 
+	       .always(function(){
+	       		setTimeout(function(){
+	         	  $(".box-cargando").fadeOut("fast");
+	       		},500)
+		   })        
   	})
 
   	$("#form-tipo-ave").submit(function(e) {
@@ -109,7 +129,11 @@ $(document).ready(function(){
 	         url: 'ventanas/registros_bd.php',
 	         type: 'POST',
 	         dataType: 'json',
-	         data: data
+	         cache:false,
+	         data: data,
+	         beforeSend:function(){
+	           $(".box-cargando").css("display","block");
+			 }	
 	       })
 	       .done(function() {
 	        	$(".box-aceptado").fadeIn("fast");
@@ -124,7 +148,12 @@ $(document).ready(function(){
 	        	setTimeout(function(){
 	        		$(".box-rechazado").fadeOut("fast");
 	        	},2000)
-	       })       
+	       })   
+	       .always(function(){
+	       		setTimeout(function(){
+	         	  $(".box-cargando").fadeOut("fast");
+	       		},500)
+		   })      
   	})
 
   	$("#form-courier").submit(function(e) {
@@ -135,7 +164,11 @@ $(document).ready(function(){
 	         url: 'ventanas/registros_bd.php',
 	         type: 'POST',
 	         dataType: 'json',
-	         data: data
+	         cache:false,
+	         data: data,
+	         beforeSend:function(){
+	           $(".box-cargando").css("display","block");
+			 }	
 	       })
 	       .done(function(){
 	        	$(".box-aceptado").fadeIn("fast");
@@ -151,7 +184,12 @@ $(document).ready(function(){
 	        	setTimeout(function(){
 	        		$(".box-rechazado").fadeOut("fast");
 	        	},2000)
-	       })       
+	       })    
+	       .always(function(){
+	       		setTimeout(function(){
+	         	  $(".box-cargando").fadeOut("fast");
+	       		},500)
+		   })     
   	})
 
   	$("#form-cliente").submit(function(e) {
@@ -162,7 +200,11 @@ $(document).ready(function(){
 	         url: 'ventanas/registros_bd.php',
 	         type: 'POST',
 	         dataType: 'json',
-	         data: data
+	         cache:false,
+	         data: data,
+	         beforeSend:function(){
+	           $(".box-cargando").css("display","block");
+			 }	
 	       })
 	       .done(function(){
 	        	$(".box-aceptado").fadeIn("fast");
@@ -177,7 +219,12 @@ $(document).ready(function(){
 	        	setTimeout(function(){
 	        		$(".box-rechazado").fadeOut("fast");
 	        	},2000)
-	       })       
+	       })
+	       .always(function(){
+	       		setTimeout(function(){
+	         	  $(".box-cargando").fadeOut("fast");
+	       		},500)
+		   })      
   	})
 
   	$("#form-reg-elemento").submit(function(e) {
@@ -190,6 +237,9 @@ $(document).ready(function(){
 	         cache:false,
              contentType: false,
 	         processData: false,
+	         beforeSend:function(){
+	           $(".box-cargando").css("display","block");
+			 }	
 	       })
 	       .done(function(data){
 	        	$(".box-aceptado").fadeIn("fast");
@@ -204,7 +254,12 @@ $(document).ready(function(){
 	        	setTimeout(function(){
 	        		$(".box-rechazado").fadeOut("fast");
 	        	},2000)
-	       })       
+	       }) 
+	       .always(function(){
+	       		setTimeout(function(){
+	         	  $(".box-cargando").fadeOut("fast");
+	       		},500)
+		   })        
   	})
 
   	 $("#file").change(function() {

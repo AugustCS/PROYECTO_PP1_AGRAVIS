@@ -42,6 +42,13 @@ textarea{
 	text-align: center;
 	background: white;
 }
+.box-cargados-top{
+	width:100%;
+	height: auto;
+	padding: 10px;
+	background: skyblue;
+	text-align: center;
+}
 td{
 	padding: 5px;
 	border-bottom: 1px solid black;
@@ -62,6 +69,12 @@ td{
 	border:1px solid gray;
 	border-radius: 3px;
 	margin-top: 5px;
+}
+.cajas-form{
+	width:32%;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 5px;
 }
 .texto-ajustado{
 	max-width: 354px;
@@ -105,6 +118,17 @@ td{
 	color:white;
 	font-size: 17px;
 	text-align: center;
+}
+.box-cargando{
+	width:200px;
+	height: auto;
+	padding-top: 10px;
+	text-align: center;
+	display: none;
+}
+.box-cargando span{
+	font-size: 40px;
+	color:white;
 }
 /*ESTILOS PRINCIPAL*/
 a{

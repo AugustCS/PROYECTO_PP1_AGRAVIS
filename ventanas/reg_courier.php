@@ -40,6 +40,10 @@
 						</select>
 					</fieldset><br>
 					<fieldset>
+						<label>Zona envio</label><br>
+						<input type="text" class="cajas-texto" name="zonaenvio" placeholder="Escribe aqui" required>
+					</fieldset><br>
+					<fieldset>
 						<label>Costo Envio</label>
 						<input onkeypress="return soloNumeros(event)" type="text" class="cajas-texto" placeholder="Escribe aqui" name="costo_envio" required>
 					</fieldset><br>
@@ -53,12 +57,13 @@
 				<table>
 					<thead>
 						<tr>
-							<td colspan="4" class="barrita-roja">LISTA DE COURIERS</td>
+							<td colspan="5" class="barrita-roja">LISTA DE COURIERS</td>
 						</tr>
 						<tr class="barrita-amarilla">
 							<td>ID</td>
 							<td>NOMBRE</td>
 							<td>LINEA ENVIO</td>
+							<td>ZONA ENVIO</td>
 							<td>COSTO ENVIO</td>
 						</tr>
 					</thead>

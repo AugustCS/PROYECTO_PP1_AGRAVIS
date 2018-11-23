@@ -69,11 +69,13 @@
 			$nombre_courier = $_POST["nom_courier"];
 			$linea_envio = $_POST["linea_envio"];
 			$costo_envio = $_POST["costo_envio"];
+			$zona_envio = $_POST["zonaenvio"];
 
-			$inser_courier = $conexion ->prepare("INSERT INTO bd_agravis.TBL_COURIER(NOM_COURIER,LINEA_ENVIO,COSTO_ENVIO) VALUES(:NOM_COURIER,:LINEA_ENVIO,:COSTO_ENVIO);");
+			$inser_courier = $conexion ->prepare("INSERT INTO bd_agravis.TBL_COURIER(NOM_COURIER,LINEA_ENVIO,COSTO_ENVIO,ZONAENVIO) VALUES(:NOM_COURIER,:LINEA_ENVIO,:COSTO_ENVIO,:ZONAENVIO);");
 			$inser_courier->bindParam(":NOM_COURIER",$nombre_courier);
 			$inser_courier->bindParam(":LINEA_ENVIO",$linea_envio);
 			$inser_courier->bindParam(":COSTO_ENVIO",$costo_envio);
+			$inser_courier->bindParam(":ZONAENVIO",$zona_envio);
 			
 			$inser_courier->execute();
 			print true;
