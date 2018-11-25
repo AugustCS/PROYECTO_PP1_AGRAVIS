@@ -27,6 +27,8 @@ textarea{
 .box-cargados-left h1{
 	font-size: 22px;
 	margin-bottom: 15px;
+	border-left: 5px solid #F5B003;
+	padding-left: 10px;
 }
 .box-cargados-right{
 	width:65%;
@@ -307,10 +309,8 @@ a{
 }
 .box-in-wel{
 	padding: 10px;
-	border-radius: 5px;
-	border:2px solid #F5B003;
-	background: #ED303B;
-	color:white;
+	border-left: 5px solid #F5B003;
+	color:#ED303B;
 }
 /************************* ESTILOS LOGIN *********************/
 .body-login{

@@ -26,6 +26,7 @@
 <body>
 	<div class="box-cargados">
 		<div class="box-cargados-top">
+			<h1 style="padding:10px;text-align:center;">GENERAR PEDIDO</h1>
 			<form>
 				<fieldset class="cajas-form">
 					<label>Empleado: </label><br>

@@ -43,7 +43,7 @@
 			<a id="reg-courier">Registro Courier</a>
 		</div>
 
-		<h3 class="t-2"><i class="fas fa-chart-pie"></i> Pedido</h3>
+		<h3 class="t-2"><i class="fas fa-chart-pie"></i> Pedidos</h3>
 		<div class="menu-lat lat-2">
 			<a id="reg-pedido">Generar Pedido</a>
 			<a id="con-pedido">Consultar Pedido</a>
@@ -75,8 +75,7 @@
 			<div class="box-cargados b-wel">
 				<div class="box-welcome">
 					<div class="box-in-wel">
-						<h1>BIENVENIDO A AGRAVIS</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officia expedita, ipsum tenetur maxime, dolor praesentium unde quasi dolorum illo voluptas perferendis optio asperiores exercitationem enim similique ab hic voluptates.</p>
+						<h1 style="font-size: 25px;">BIENVENIDO A AGRAVIS</h1>
 					</div>
 				</div>
 			</div>
