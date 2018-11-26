@@ -132,6 +132,10 @@ td{
 	font-size: 40px;
 	color:white;
 }
+.centrar{
+	text-align: center;
+	font-weight: bold;
+}
 /*ESTILOS PRINCIPAL*/
 a{
 	cursor:pointer;

@@ -21,13 +21,15 @@
 	    }
     </script>
     <script src="js/jquery.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/jquery-ui.js"></script>
 	<script src="js/logica.js"></script>
 </head>
 <body>
 	<div class="box-cargados">
 		<div class="box-cargados-top">
 			<h1 style="padding:10px;text-align:center;">GENERAR PEDIDO</h1>
-			<form>
+			<form action="ventanas/probando.php" method="POST">
 				<fieldset class="cajas-form">
 					<label>Empleado: </label><br>
 					<select name="idempleado" class="cajas-texto" id="da-empleado">
@@ -54,23 +56,23 @@
 				</fieldset>
 				<fieldset class="cajas-form">
 					<label>Fecha Documento</label>
-					<input type="text" class="cajas-texto">
+					<input type="text" class="cajas-texto centrar" value="<?php echo date('Y/m/d'); ?>" name="fechita">
 				</fieldset>
 				<fieldset class="cajas-form">
 					<label>Lugar Envio</label>
-					<input type="text" class="cajas-texto">
+					<input type="text" class="cajas-texto centrar" name="lugar">
 				</fieldset>
 				<fieldset class="cajas-form">
 					<label>Fecha Despacho</label>
-					<input type="text" class="cajas-texto">
+					<input type="text" class="cajas-texto centrar" id="datepicker1" name="fechaenvio">
 				</fieldset>
 				<fieldset class="cajas-form">
 					<label>Fecha Llegada</label>
-					<input type="text" class="cajas-texto">
+					<input type="text" class="cajas-texto centrar" id="datepicker2" name="fechallegada">
 				</fieldset>
 				<fieldset class="cajas-form">
 					<label>Monto Total</label>
-					<input onkeypress="return soloNumeros(event);" type="text" class="cajas-texto">
+					<input onkeypress="return soloNumeros(event);" type="text" class="cajas-texto" disabled>
 				</fieldset>
 				<fieldset style="padding-top: 10px;" class="cajas-form">
 					<input type="reset" class="btn btn-primary" value="Limpiar">
