@@ -11,7 +11,7 @@
 	<title>AGRAVIS E.I.R.L.</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Roboto|Niramit" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Niramit|Roboto+Slab" rel="stylesheet">
 	<link rel="stylesheet" href="css/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="icon" href="img/logo.png">

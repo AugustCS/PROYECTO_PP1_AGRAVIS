@@ -8,7 +8,7 @@ a,span,img{
 	text-decoration:none;
 }
 a,span,h1,h2,h3,h4,h5,h6,p,li,input,label,textarea,option,select,td{
-	font-family: 'Niramit', sans-serif;
+	font-family: 'Roboto Slab', serif;
 }
 textarea{
 	font-size: 14px;
@@ -34,7 +34,8 @@ textarea{
 	width:65%;
 	height: 100%;
 	float:right;
-	background: gray;
+	background-image:url("../img/pollin4.jpg");
+	background-size: cover;
 	padding: 20px;
 }
 .box-cargados-right table{
@@ -48,8 +49,21 @@ textarea{
 	width:100%;
 	height: auto;
 	padding: 10px;
-	background: skyblue;
 	text-align: center;
+}
+.box-cargados-bottom{
+	width:100%;
+	height: auto;
+	padding: 10px;
+	text-align: center;
+}
+.box-cargados-bottom table{
+	border:1px solid black;
+	width: 95%;
+	height: auto;
+	text-align: center;
+	background: white;
+	margin:0 auto;
 }
 td{
 	padding: 5px;

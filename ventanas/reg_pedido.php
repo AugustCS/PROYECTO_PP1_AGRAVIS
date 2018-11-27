@@ -60,7 +60,7 @@
 				</fieldset>
 				<fieldset class="cajas-form">
 					<label>Lugar Envio</label>
-					<input type="text" class="cajas-texto centrar" name="lugar">
+					<input type="text" class="cajas-texto" name="lugar">
 				</fieldset>
 				<fieldset class="cajas-form">
 					<label>Fecha Despacho</label>
@@ -76,9 +76,31 @@
 				</fieldset>
 				<fieldset style="padding-top: 10px;" class="cajas-form">
 					<input type="reset" class="btn btn-primary" value="Limpiar">
-					<input type="submit" class="btn btn-success" value="Generar">
+					<input type="submit" class="btn btn-success" value="Seleccionar">
 				</fieldset>
 			</form>
+		</div>
+		<div class="box-cargados-bottom">
+			<table>
+				<thead>
+					<tr>
+						<td colspan="5">Lista de Elementos</td>
+					</tr>
+					<tr>
+						<td>ID</td>
+						<td>NOMBRE</td>
+						<td>COSTO CAJA</td>
+						<td>CANTIDAD</td>
+						<td>ACCION</td>
+					</tr>
+				</thead>
+				<tbody id="tabla-finta-productos">
+					<script>
+						$("#tabla-finta-productos").load("ventanas/con_finta_elementos.php");
+					</script>
+				</tbody>
+			</table>
+			
 		</div>
 	</div>
 </body>
